@@ -1,14 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const API_ENDPOINT  = "https://book-management-website.herokuapp.com/books/"
+const API_ENDPOINT_IMAGES  = "https://book-management-website.herokuapp.com/"
 
 function Book({book, handleDeleteBook}) {
     const navigate = useNavigate()
     return (
         <div className='d-flex flex-column m-2 book-infos'>
             <div className='shadow'>
-                <img className='book-img' height={250} width={162} src={API_ENDPOINT+book.bookImg} alt="cover"/>
+                <img className='book-img' height={250} width={162} src={API_ENDPOINT_IMAGES+book.bookImg} alt="cover"/>
                 <div className='p-2 bg-light border'>
                     <p className='book-name'>{book.name}<span className='book-date'> {book.date}</span></p>
                     <p className='font-weight-light'>{book.author}</p>
