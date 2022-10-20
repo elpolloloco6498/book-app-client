@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const API_ENDPOINT  = "http://localhost:3000/"
+const API_ENDPOINT  = "https://book-management-website.herokuapp.com/books/"
 
 function Book({book, handleDeleteBook}) {
     const navigate = useNavigate()
