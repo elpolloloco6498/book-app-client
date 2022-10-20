@@ -58,4 +58,4 @@ async function deleteBook(id) {
 }
 
 
-module.exports = {getAllBooks, addBook, updateBook, deleteBook}
+export{getAllBooks, addBook, updateBook, deleteBook}
