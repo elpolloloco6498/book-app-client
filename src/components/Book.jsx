@@ -1,5 +1,4 @@
 import React from 'react';
-import cover from "../assets/book-cover.jpg"
 import { useNavigate } from 'react-router-dom';
 
 const API_ENDPOINT  = "http://localhost:3000/"
