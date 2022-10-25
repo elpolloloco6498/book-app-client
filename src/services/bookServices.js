@@ -1,6 +1,9 @@
-const API_ENDPOINT = "https://book-management-website.herokuapp.com/books/"
+
+
+const API_ENDPOINT = process.env.REACT_APP_API_ENDPOINT + "books/"
 
 async function getAllBooks() {
+    console.log(API_ENDPOINT)
     const res = await fetch(API_ENDPOINT)
     const listBooks = await res.json()
     return listBooks
