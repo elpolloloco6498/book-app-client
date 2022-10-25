@@ -1,8 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const API_ENDPOINT_IMAGES  = process.env.REACT_APP_API_ENDPOINT
-
 function Book({book, handleDeleteBook}) {
     const navigate = useNavigate()
     return (
